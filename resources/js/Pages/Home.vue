@@ -1,13 +1,18 @@
 <template>
-    <h1>Home {{ title }}</h1>
+  <Head :title="title"  />
+    <h1>{{ title }}</h1>
 </template>
 
+
 <script>
+import {Head} from "@inertiajs/inertia-vue3";
 export default {
+    components: {
+        Head
+    },
     props: {
         title: String
     }
-
 }
 </script>
 

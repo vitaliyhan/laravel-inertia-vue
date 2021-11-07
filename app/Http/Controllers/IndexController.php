@@ -7,13 +7,18 @@ use Illuminate\Http\Request;
 use Inertia\Inertia;
 
 class IndexController extends Controller
-
-
 {
     public function show()
     {
         return Inertia::render('Home', [
             'title' => 'Home inertia'
+        ]);
+    }
+
+    public function about()
+    {
+        return Inertia::render('About', [
+            'title' => 'About'
         ]);
     }
 }
